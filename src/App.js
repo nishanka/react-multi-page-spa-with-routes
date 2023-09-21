@@ -12,9 +12,9 @@ const myRouter = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/products', element: <ProductsPage /> },
-      { path: '/products/:productId', element: <ProductDetailPage /> },
+      { index: true, element: <HomePage /> }, // path: '' // You can set default path using "index: true" as well
+      { path: 'products', element: <ProductsPage /> },
+      { path: 'products/:productId', element: <ProductDetailPage /> },
     ]
   },
  /* {
